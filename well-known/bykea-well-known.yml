@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: searched
+source: live probe of https://bykea.com/.well-known/*
+host: https://bykea.com
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  file: bykea-security.txt
+- path: /.well-known/openid-configuration
+  status: 403
+- path: /.well-known/oauth-authorization-server
+  status: 403
+- path: /.well-known/api-catalog
+  status: 403
+- path: /.well-known/ai-plugin.json
+  status: 403
+notes: >-
+  Only /.well-known/security.txt returns 200. The remaining paths return 403
+  (Cloudflare bot protection fronts the whole non-well-known surface), i.e. no
+  OIDC/OAuth discovery, API catalog, or AI plugin manifest is published.

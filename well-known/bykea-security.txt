@@ -1,0 +1,4 @@
+Acknowledgments: https://hackerone.com/bykea
+Contact: mailto:security@bykea.com
+Expires: 2026-06-01T15:40:00Z
+Policy: https://bykea.com/security
